@@ -1,8 +1,8 @@
-
 import Layout from '../components/Layout';
+import { Fragment } from 'react';
 
 const About = () => (
-    <Layout>
+    <Fragment>
         <style jsx>
             {`
                 h2 {
@@ -11,7 +11,7 @@ const About = () => (
             `}
         </style>
         <h2>안녕하세요 저는 JHY 입니다.</h2>
-    </Layout>
+    </Fragment>
 )
 
 export default About;

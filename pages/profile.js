@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Router from 'next/router'
 import fetch from 'isomorphic-unfetch'
 import nextCookie from 'next-cookies'
-import Layout from '../components/layout'
 import { withAuthSync } from '../utils/auth'
 import getHost from '../utils/get-host'
 
@@ -10,7 +9,7 @@ const Profile = props => {
   const { name, login, bio, avatarUrl } = props.data
 
   return (
-    <Layout>
+    <Fragment>
       <img src={avatarUrl} alt="Avatar" />
       <h1>{name}</h1>
       <p className="lead">{login}</p>
@@ -34,7 +33,7 @@ const Profile = props => {
           color: #6a737d;
         }
       `}</style>
-    </Layout>
+    </Fragment>
   )
 }
 

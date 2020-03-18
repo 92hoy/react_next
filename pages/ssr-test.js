@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import React, { Fragment } from 'react'
 import { withAuthSync } from '../utils/auth'
 import axios from 'axios';
 
@@ -17,11 +17,11 @@ class SSRTest extends React.Component {
         )
         
         return (
-            <Layout>
+            <Fragment>
                 <ul>
                     {userList}
                 </ul>
-            </Layout>
+            </Fragment>
         );
     }
 }
