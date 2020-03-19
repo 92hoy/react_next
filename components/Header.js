@@ -19,6 +19,10 @@ const Header = () => {
                         <Link prefetch href="/ssr-test"><a style={linkStyle}>SSR 테스트</a></Link>
                     </li>
                     <li>
+                        <Link href="/board"><a style={linkStyle}>Board</a></Link>
+                    </li>
+
+                    <li>
                         <Link href="/login">
                             <a>Login</a>
                         </Link>

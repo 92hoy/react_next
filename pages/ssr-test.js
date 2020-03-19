@@ -12,6 +12,7 @@ class SSRTest extends React.Component {
 
     render() {
         const { users } = this.props;
+        console.log(users);
         const userList = users.map(
             user => <li key={user.id}>{user.name} , {user.phnumber},{user.regist_date}</li>
         )
