@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import MUIDataTable from "mui-datatables";
+import { withAuthSync } from '../utils/auth'
 import axios from 'axios';
 
 class Board extends React.Component {
@@ -31,7 +32,7 @@ class Board extends React.Component {
     }
 }
 
-export default Board;
+export default withAuthSync(Board);
 
 // const columns = ["Name", "Company", "City", "State"];
 // const data = [
