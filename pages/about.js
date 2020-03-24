@@ -1,4 +1,3 @@
-import Layout from '../components/Layout';
 import { Fragment } from 'react';
 
 const About = () => (

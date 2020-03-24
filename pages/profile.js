@@ -40,7 +40,7 @@ const Profile = props => {
 Profile.getInitialProps = async ctx => {
   const { token } = nextCookie(ctx)
   const apiUrl = getHost(ctx.req) + '/api/profile'
-
+  
   const redirectOnError = () =>
     typeof window !== 'undefined'
       ? Router.push('/login')
